@@ -1,0 +1,134 @@
+	<?
+     include('header.html'); 
+     ?>
+
+	<div id="wrapper">
+		<section class="stores">
+			<article>
+				<figure>
+					<img src="/images/detail/sinchon/motel/tree/0.jpg" alt="호텔 트리" />
+					<figcaption><a href = "tel:02-312-4978"><i class="xi-call"></i> 02-312-4978</a></figcaption>
+				</figure>
+				<hgroup>
+					<h2>호텔 트리</h2>
+					<h3><strong>현금결제시</strong>야놀자 회원가</br>10% 추가 할인<a href="http://stay.yanolja.com/motels/charges.php?placeNo=100142" target="_blank">(회원가 보기)</a></h3>
+				</hgroup>
+				<p><a href="http://map.naver.com/?mpx=09410114%3A37.5588415%2C126.9396771%3AZ12%3A0.0115729%2C0.0047402&searchCoord=c13d1d5967fd2de0182670576953a5688e2c68682fe533130cea3067d103a93f&query=7ISc7Jq47Yq567OE7IucIOyEnOuMgOusuOq1rCDsl7DshLjroZwy6ri4IDEwMS0xMA%3D%3D&menu=location&tab=1&lng=c205dde5f2413899ce9d0ae76157b6d9&mapMode=0&lat=833b3a28ef2d5101d927945a52f0b6af&dlevel=12&enc=b64"><i class="xi-map-marker"></i> 서울특별시 서대문구 연세로2길 101-10</p>
+					<p>시설이 정말정말 깔끔한 호텔트리!</br> 아직 안가보셨다면 신촌 모텔을 간 적이 없는거랍니다 :)</p>
+	
+			</article>
+
+		<!-- 가게 사진-->
+		<div class="swiper-container">
+        	<div class="swiper-wrapper">
+        	 <!-- Add Pagination -->
+       		 <div class="swiper-pagination swiper-pagination-white"></div>
+       		 <!-- Add Arrows -->
+        	 <div class="swiper-button-next swiper-button-white"></div>
+       		 <div class="swiper-button-prev swiper-button-white"></div>
+
+           
+            <div class="swiper-slide" style="background-image:url(/images/detail/sinchon/motel/tree/i1.jpg)"></div>
+        	<div class="swiper-slide" style="background-image:url(/images/detail/sinchon/motel/tree/i2.jpg)"></div>
+        	<div class="swiper-slide" style="background-image:url(/images/detail/sinchon/motel/tree/i3.jpg)"></div>
+            </div>
+        </div>
+	        <!-- Swiper JS -->
+			    <script src="/js/swiper.min.js"></script>
+			    <!-- Initialize Swiper -->
+			    <script>
+			    var swiper = new Swiper('.swiper-container', {
+			        pagination: '.swiper-pagination',
+			        paginationClickable: true,
+			        nextButton: '.swiper-button-next',
+			        prevButton: '.swiper-button-prev',
+			        spaceBetween: 30,
+			        effect: 'fade',
+			        autoplay : 3000
+			    });
+			    </script>     
+		</section>
+		<aside>
+			<div id="map"> <!-- 다음지도 -->
+				<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=7aa0dedfef42f22b766f0441e9ed65a4"></script>
+				<script type="text/javascript" src="/js/detail/sinchon/motel/tree.js"></script>
+			</div>	
+			<section class="popular-stores"> <!-- 근처의 인기가게-->
+			<h2>근처의 인기 업체</h2>
+			<a href="http://www.ludenshouse.com/detail/sinchon/motel/santafe.html">호텔 산타페</a>
+		</section>		
+		</aside>
+	</div><!-- .wrapper -->
+	
+	<!-- Mobile -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+    	var logo_wrap_height = $('.article_left img').height();
+    	var img_height = $('.article_right').height();
+        var mTop = (logo_wrap_height - img_height ) /2;
+        $('.article_right').css('margin-top',mTop); })
+    </script>
+	<div id="mobile_wrap">
+		<div class="mobile_article_wrap">
+			<div class="article_left">
+				<img src="/images/detail/sinchon/motel/tree/0.jpg" alt="호텔 트리" />
+			</div>
+			<div class="article_right">
+				<div class="content_title">호텔 트리</div>
+				<div class="content_benefit">
+					<div class="content_left"><i class="xi-gift-o"></i> 제휴혜택</div>
+					<div class="content_right" style="font-weight:bold"><strong>현금결제시</strong>야놀자 회원가</br>10% 추가 할인<a href="http://stay.yanolja.com/motels/charges.php?placeNo=100142" target="_blank">(회원가 보기)</a></div>
+				</div>
+				<div class="content_tel">
+					<div class="content_left"><i class="xi-call"></i> 전화번호</div>
+					<div class="content_right"><a href = "tel:02-312-4978">02-312-4978</a></div>
+				</div>	
+				<div class="content_location">
+					<div class="content_left"><i class="xi-map-marker"></i> 주소</div>
+					<div class="content_right"><a href="http://map.naver.com/?mpx=09410114%3A37.5588415%2C126.9396771%3AZ12%3A0.0115729%2C0.0047402&searchCoord=c13d1d5967fd2de0182670576953a5688e2c68682fe533130cea3067d103a93f&query=7ISc7Jq47Yq567OE7IucIOyEnOuMgOusuOq1rCDsl7DshLjroZwy6ri4IDEwMS0xMA%3D%3D&menu=location&tab=1&lng=c205dde5f2413899ce9d0ae76157b6d9&mapMode=0&lat=833b3a28ef2d5101d927945a52f0b6af&dlevel=12&enc=b64">서울특별시 서대문구 연세로2길 101-10</a></div>
+				</div>
+			</div>	
+		</div>
+		<div class="pluskakao">
+			<a href="http://plus.kakao.com/home/m8qoy4om"><img src="/images/home/pluskakao.jpg" alt="루덴스하우스 친구추가"/></a>
+		</div>
+	
+		<div class="detail_swiper">
+			<div class="swiper-container">
+	            <div class="swiper-wrapper">
+	                
+	                <div class="swiper-slide"><img src="/images/detail/sinchon/motel/tree/i1.jpg"></div>  
+	                <div class="swiper-slide"><img src="/images/detail/sinchon/motel/tree/i2.jpg"></div>
+	                <div class="swiper-slide"><img src="/images/detail/sinchon/motel/tree/i3.jpg"></div>                 
+	            </div>
+	            <!-- Add Pagination -->
+	            <div class="swiper-pagination swiper-pagination-white"></div>
+	            <!-- Add Navigation -->
+	            <div class="swiper-button-prev swiper-button-white"></div>
+	            <div class="swiper-button-next swiper-button-white"></div>
+	       	</div>	
+		</div>	
+		
+		<!-- Initialize Swiper -->
+	    <script>
+	    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev',
+	        slidesPerView: 1,
+	        paginationClickable: true,
+	        spaceBetween: 30,
+	        loop: true,
+	        effect: 'fade',
+			autoplay : 3000
+	    });
+	    </script>
+		<div class="recommend_title">근처의 인기 업체</div>
+		<div class="recommend"><a href="http://www.ludenshouse.com/detail/sinchon/motel/santafe.html">호텔 산타페</a></div>
+	</div>
+
+    <!-- Footer -->
+	<?
+     include('footer.html'); 
+     ?> 
+	

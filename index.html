@@ -1,0 +1,68 @@
+	<!-- Header -->
+	 <?
+     include('header2.html'); 
+     ?> 
+
+	<!-- Swiper -->
+   	<div class="wrap">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a target="blank" href="#"><img src="images/home/banner/mainbanner5c.jpg"/></a></div>
+                <div class="swiper-slide"><a target="blank" href="#"><img src="images/home/banner/mainbanner2c.jpg"/></a></div>
+               	<div class="swiper-slide"><a target="blank" href="#"><img src="images/home/banner/mainbanner4c.jpg"/></a></div>   
+                <div class="swiper-slide"><a target="blank" href="#"><img src="images/home/banner/mainbanner3c.jpg"/></a></div>                
+            </div>
+            <!-- Add Pagination -->
+           <div class="swiper-pagination swiper-pagination-white"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true,
+        effect: 'fade',
+        autoplay : 2000
+    });
+    </script>
+
+		
+		<div class="wrap">
+			<div class="title"><i class="xi-map-marker"></i> 지역별 제휴업체 찾기</div>
+			<div class="obj_top">
+				 <div class="a"><a href="http://www.ludenshouse.com/location/sinchon/rpc.html"><img src="images/category/sinchon.jpg"/></a></div>
+                 <div class="a"><a href="http://www.ludenshouse.com/location/sogang/rpc.html"><img src="images/category/sogang.jpg"/></a></div>
+                 <div class="a"><a href="http://www.ludenshouse.com/location/ewha/rpc.html"><img src="images/category/ewha.jpg"/></a></div>
+                 <div class="a"><a href="http://www.ludenshouse.com/location/hongik/rpc.html"><img src="images/category/hongik.jpg"/></a></div>
+			</div>
+			<div class="title"><i class="xi-map-marker"></i> 카테고리별 제휴업체 찾기</div>
+			<div class="obj_left">
+				<div class="b"><a href="http://www.ludenshouse.com/category/sinchon/restaurant.html"><img src="images/category/restaurant.jpg"/></a></div>
+				<div class="b"><a href="http://www.ludenshouse.com/category/sinchon/pub.html"><img src="images/category/pub.jpg"/></a></div>
+				<div class="b"><a href="http://www.ludenshouse.com/category/sinchon/cafe.html"><img src="images/category/cafe.jpg"/></a></div>
+			</div>
+			<div class="obj_right">
+				<div class="c"><a href="http://www.ludenshouse.com/category/sinchon/hobby.html"><img src="images/category/hobby.jpg"/></a></div>
+				<div class="c"><a href="http://www.ludenshouse.com/category/sinchon/workout.html"><img src="images/category/workout.jpg"/></a></div>
+				<div class="c"><a href="http://www.ludenshouse.com/category/sinchon/hair.html"><img src="images/category/hair.jpg"/></a></div>
+				<div class="c"><a href="http://www.ludenshouse.com/category/sinchon/beauty.html"><img src="images/category/beauty.jpg"/></a></div>
+				<div class="c"><a href="http://www.ludenshouse.com/category/sinchon/motel.html"><img src="images/category/motel.jpg"/></a></div>
+				<div class="c"><a href="http://www.ludenshouse.com/category/sinchon/goods.html"><img src="images/category/goods.jpg"/></a></div>
+			</div>
+		</div>
+
+	<!-- Footer -->
+	<?
+     include('footer.html'); 
+     ?>

@@ -1,0 +1,93 @@
+	<!-- Header -->
+	<?
+     include('header2.html'); 
+     ?>
+
+    <!-- Daum Map API -->
+	<div id="wrap">
+		<div id="map"></div>
+	</div>
+	<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=7aa0dedfef42f22b766f0441e9ed65a4"></script>
+	<script type="text/javascript" src="/js/location/sogang/rpc.js"></script>
+  	
+  	<div class="wrap">
+	  	<div class="title"><i class="xi-map-marker"></i> 서강대 주변의 제휴업체입니다</div>
+		<div class="undermapbar">
+			    <div class="menu"><a href="http://www.ludenshouse.com/location/sogang/rpc.html"><i class="xi-tags"></i> 밥,술,카페</a></div>
+		    	<div class="menu"><a href="http://www.ludenshouse.com/location/sogang/howo.html">취미,운동</a></div>
+		      	<div class="menu"><a href="http://www.ludenshouse.com/location/sogang/habe.html">헤어,뷰티</a></div>
+		      	<div class="menu"><a href="http://www.ludenshouse.com/location/sogang/mogo.html">모텔,잡화</a></div>
+		</div>
+	</div>
+		<div class="wrap">
+		<div class="obj_top">
+			<!-- 서강대 -->
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/restaurant/ggobugi.html"><img src="/images/location/sogang/rpc/ggobugi.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/restaurant/balibistro.html"><img src="/images/location/sogang/rpc/balibistro.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/restaurant/saembat.html"><img src="/images/location/sogang/rpc/saembat.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/restaurant/gogimani1.html"><img src="/images/location/sogang/rpc/gogimani1.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/restaurant/gogimani2.html"><img src="/images/location/sogang/rpc/gogimani2.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/restaurant/manimani.html"><img src="/images/location/sogang/rpc/manimani.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/pub/gojupa.html"><img src="/images/location/sogang/rpc/gojupa.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/pub/kura.html"><img src="/images/location/sogang/rpc/kura.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/pub/jinsung.html"><img src="/images/location/sogang/rpc/jinsung.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/pub/jjaktae.html"><img src="/images/location/sogang/rpc/jjaktae.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/pub/ggamaeng.html"><img src="/images/location/sogang/rpc/ggamaeng.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/pub/palgongsan.html"><img src="/images/location/sogang/rpc/palgongsan.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/cafe/athen.html"><img src="/images/location/sogang/rpc/athen.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/cafe/alles.html"><img src="/images/location/sogang/rpc/alles.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/cafe/gowoon.html"><img src="/images/location/sogang/rpc/gowoon.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/cafe/studycafes.html"><img src="/images/location/sogang/rpc/studycafes.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/cafe/triptea.html"><img src="/images/location/sogang/rpc/triptea.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/cafe/atkoom.html"><img src="/images/location/sogang/rpc/atkoom.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/cafe/bstcoffee.html"><img src="/images/location/sogang/rpc/bstcoffee.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/cafe/take5.html"><img src="/images/location/sogang/rpc/take5.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sogang/cafe/treeshadow.html"><img src="/images/location/sogang/rpc/treeshadow.jpg"/></a></div>		
+			<!-- 신촌 -->
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/restaurant/kyochonsc.html"><img src="/images/location/sinchon/rpc/kyochonsc.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/restaurant/goowolsan.html"><img src="/images/location/sinchon/rpc/goowolsan.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/restaurant/nanntandor.html"><img src="/images/location/sinchon/rpc/nanntandor.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/restaurant/yabai.html"><img src="/images/location/sinchon/rpc/yabai.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/restaurant/parmi.html"><img src="/images/location/sinchon/rpc/parmi.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/restaurant/kitchenstar.html"><img src="/images/location/sinchon/rpc/kitchenstar.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/restaurant/donghae.html"><img src="/images/location/sinchon/rpc/donghae.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/restaurant/thedaksc.html"><img src="/images/location/sinchon/rpc/thedaksc.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/restaurant/choonchundak.html"><img src="/images/location/sinchon/rpc/choonchundak.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/restaurant/darkrestaurant.html"><img src="/images/location/sinchon/rpc/darkrestaurant.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/pub/900pub.html"><img src="/images/location/sinchon/rpc/900pub.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/pub/petalpocha.html"><img src="/images/location/sinchon/rpc/petalpocha.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/pub/ggongsul.html"><img src="/images/location/sinchon/rpc/ggongsul.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/pub/barpro.html"><img src="/images/location/sinchon/rpc/barpro.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/pub/somunnanjip.html"><img src="/images/location/sinchon/rpc/somunnanjip.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/pub/scgogijip.html"><img src="/images/location/sinchon/rpc/scgogijip.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/sinchon/cafe/mrhealingsc.html"><img src="/images/location/sinchon/rpc/mrhealingsc.jpg"/></a></div>
+			<!-- 이화여대 -->
+			<div class="a"><a href="http://www.ludenshouse.com/detail/ewha/restaurant/giros.html"><img src="/images/location/ewha/rpc/giros.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.comdetail/ewha/restaurant/ssambab.html"><img src="/images/location/ewha/rpc/ssambab.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/ewha/restaurant/arirang.html"><img src="/images/location/ewha/rpc/arirang.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/ewha/cafe/thepuzzle.html"><img src="/images/location/ewha/rpc/thepuzzle.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/ewha/cafe/sodam.html"><img src="/images/location/ewha/rpc/sodam.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/ewha/cafe/healingatewha.html"><img src="/images/location/ewha/rpc/healingatewha.jpg"/></a></div>	
+			
+			<!-- 홍익대 -->
+			<div class="a"><a href="http://www.ludenshouse.com/detail/hongik/restaurant/donko.html"><img src="/images/location/hongik/rpc/donko.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/hongik/restaurant/minarihd.html"><img src="/images/location/hongik/rpc/minarihd.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/hongik/restaurant/minariyn.html"><img src="/images/location/hongik/rpc/minariyn.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/hongik/restaurant/nangpoong1.html"><img src="/images/location/hongik/rpc/nangpoong1.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/hongik/restaurant/nangpoong2.html"><img src="/images/location/hongik/rpc/nangpoong2.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/hongik/restaurant/yooganehd2.html"><img src="/images/location/hongik/rpc/yooganehd2.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/hongik/pub/chija.html"><img src="/images/location/hongik/rpc/chija.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/hongik/pub/modak1.html"><img src="/images/location/hongik/rpc/modak1.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/hongik/pub/modak2.html"><img src="/images/location/hongik/rpc/modak2.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/hongik/cafe/supercoffeehd.html"><img src="/images/location/hongik/rpc/supercoffeehd.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/hongik/cafe/lennanon.html"><img src="/images/location/hongik/rpc/lennanon.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/hongik/cafe/healingathd.html"><img src="/images/location/hongik/rpc/healingathd.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/hongik/cafe/mrhealinghd.html"><img src="/images/location/hongik/rpc/mrhealinghd.jpg"/></a></div>
+			<div class="a"><a href="http://www.ludenshouse.com/detail/hongik/cafe/mrhealinghds.html"><img src="/images/location/hongik/rpc/mrhealinghds.jpg"/></a></div>
+		</div>	
+	</div>			
+	
+	<!-- Footer -->
+	<?
+     include('footer.html'); 
+     ?>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head> 
+  <meta charset="UTF-8">
+  <title>루덴스:대학생 제휴할인 서비스</title>
+
+   <!-- Xe icon -->
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+  <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <!-- CSS -->
+    <link href="/css/basic.css" rel="stylesheet">
+    <link href="/css/detail.css" rel="stylesheet">
+  <!-- jQuery -->
+    <script src="/js/jquery-3.1.1.js"></script>
+  <!-- Logo Height -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+        var logo_wrap_height = $('.header').height();
+        var img_height = $('.logo_wrap img').height();
+        var mTop = (logo_wrap_height - img_height ) /2;
+        $('.logo_wrap img').css('margin-top',mTop); })
+    </script>
+  <!-- Google Analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88765974-1', 'auto');
+  ga('send', 'pageview');
+    </script>
+
+    <!-- Daum Map API-->
+    <script type="text/javascript" src="http://apis.daum.net/maps/maps3.js?apikey=7aa0dedfef42f22b766f0441e9ed65a4"></script>
+</head>
+
+<body>
+<?
+	session_start();
+
+	$user_id = $_SESSION['user_id'];
+	$user_pk = $_SESSION['user_no'];
+
+?>
+
+<div class="header">
+        <div class="wrap">
+            <div class="logo_wrap">
+              <a href="http://www.ludenshouse.com"><img src="/images/home/logo.png"/></a>
+            </div>
+            <div class="menu_wrap">
+                <div class="menu"><a href="http://www.ludenshouse.com/category/sinchon/restaurant.html">지역할인</a></div>
+                <div class="menu"><a href="http://www.ludenshouse.com/location/sinchon/rpc.html">카테고리할인</a></div>
+                <div class="menu"><a href="http://www.selecto.kr">단체복</a></div>
+                <?
+                if(isset($user_pk)) {
+                ?>
+                <div class="menu"><a href="http://www.ludenshouse.com/mypage.html">마이페이지</a></div>
+                <? }else {
+
+                ?>
+
+                <div class="menu"><a href="http://www.ludenshouse.com/login.html">로그인</a></div>
+                <? } ?>
+            </div>
+        </div>
+</div>
+        <div class="mobile_menu_wrap">
+                 <div class="menu"><a href="http://www.ludenshouse.com/category/sinchon/restaurant.html">지역할인</a></div>
+                <div class="menu"><a href="http://www.ludenshouse.com/location/sinchon/rpc.html">카테고리할인</a></div>
+                <div class="menu"><a href="http://www.selecto.kr">단체복</a></div>
+                <?
+                if(isset($user_pk)) {
+                ?>
+                <div class="menu"><a href="http://www.ludenshouse.com/mypage.html">마이페이지</a></div>
+                <? }else {
+
+                ?>
+
+                <div class="menu"><a href="http://www.ludenshouse.com/login.html">로그인</a></div>
+                <? } ?>
+        </div>

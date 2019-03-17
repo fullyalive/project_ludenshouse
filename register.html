@@ -1,0 +1,137 @@
+ 
+	<!-- Header -->
+	 <?
+     include('header2.html'); 
+     ?>
+
+
+<script language='javascript'>
+// checkvalue 기능
+function checkvalue() {
+// a 텍스트 필드와 b 텍스트 필드 중 둘다 값이 있을 때
+if(test.pw.value && test.pw2.value) {
+  // 두 필드의 값이 서로 다를 때
+  if(test.pw.value!=test.pw2.value){
+   // status 필드에 일치하지 않는다는 문장 출력
+   test.status.value = "[ 일치하지 않습니다 ]";
+
+  // 두 필드의 값이 동일 할 때
+  } else {
+   // status 필드에 일치한다는 문장 출력
+   test.status.value = "[ 일치합니다 ]";
+  
+  }
+	// a 텍스트 필드와 b 텍스트 필드 두중하나라도 값이 없을 때
+} else {
+  // 아무것도 입력이 안 되어 있으므로 비밀번호를 입력해 달라는 메세지를 status 필드에 출력 함
+  test.status.value = "[ 비밀번호를 입력해 주세요 ]";
+
+   }
+
+}
+</script>
+<style>
+	.body { background-color:#eee; }
+	.registwrap { width: 80%; margin:10%; }
+
+	.registbox{ width:100%; }
+    .registbox .inputWrap input { width: 90%; padding: 5%; border: none; border-radius: 3px; margin-bottom:5px; }
+    .registbox .inputWrap .ex {width: 90%; padding: 1% 5%; border: none; border-radius: 3px; margin-top:-5px; color:grey; font-size:0.75em;}
+    .registbox .submit {width:100%;}
+    .registbox .submit input{ width: 96%; padding: 5% 0; margin: 10% 2%; background-color: #66c1ad; border: none; color:white; font-size:1em; }          
+	
+	.registbox .inputwrap .requiremail {width:100%; overflow:hidden; margin-top: 15px;}
+	.registbox .inputwrap .requiremail .emailbox {float: left; width:80%;}
+    .registbox .inputwrap .requiremail .emailsubmit {float: left; width:20%;}
+
+
+
+</style>	
+
+	<form action="./register.php" method="post" name="test">
+		<div class="wrap">
+			<div class="registwrap">
+				<div class="registbox">
+					<div class="inputWrap">
+						<div class="registid">
+						아이디
+					    	<input name="id" type="text" placeholder="학교 메일 주소를 적어주세요:) "/>
+					    	<div class="ex">예) gildong@sogang.ac.kr</div>	
+					    	<hr>
+					    </div>
+					    <div class="registpw">	
+					    비밀번호
+					        <input name="pw" type="password" onblur=checkvalue(); placeholder="필수정보입니다"/>
+					    </div>
+					    <div class="registpw2">	
+					    비밀번호 확인
+					        <input name="pw2" type="password" onblur=checkvalue(); placeholder="다시 한 번 입력해주세요"/>
+					    <input type="text" name="status" style="border:0; color:#66c1ad; font size:12px " readonly onfocus="this.blur();" value="[ 비밀번호를 입력해 주세요 ]">
+					        <hr>
+					    </div>
+					    <div class="selectuniv">
+					    <label for="registuniv">	
+					    재학정보를 입력해주세요 :)
+					        <select name="school" id="registuniv">
+					        	<option value="A">연세대</option>
+					        	<option value="B">서강대</option>
+					        	<option value="C">이화여대</option>
+					        	<option value="D">홍익대</option>
+					        	<option value="E">명지대</option>
+					        	<option value="F">추계예술대</option>
+					        	<option value="H">경기대</option>
+							</select>
+							<select name="major" id="registmajor">
+								<!-- 문과 -->
+					        	<option value="001">문과대학</option>
+					        	<option value="002">상경대학</option>
+					        	<option value="003">사회과학대학</option>
+					        	<option value="004">교육과학대학</option>
+					        	<option value="005">사범대학</option>
+					        	<option value="006">지식융합학부</option>
+					        	<option value="007">커뮤니케이션학부</option>
+					        	<option value="008">법학대학</option>
+					        	<option value="009">신산업융합대학</option>
+					        	<option value="010">생명시스템대학</option>
+					        	<option value="011">자연과학대학</option>
+					        	<option value="012">공과대학</option>
+					        	<option value="013">생활과학대학</option>
+					        	<option value="014">치/의과대학</option>
+					        	<option value="015">간호대학</option>
+					        	<option value="016">약학대학</option>
+					        	<option value="017">신과대학</option>
+					        	<option value="018">음악대학</option>
+					        	<option value="019">건축대학</option>
+					        	<option value="020">미술대학</option>
+					        	<option value="021">조형예술대학</option>
+					        	<option value="022">기타</option>
+					        </select>
+					        <select name="number" id="registnumber">
+								<option value="17">17학번</option>
+								<option value="16">16학번</option>
+								<option value="15">15학번</option>
+								<option value="14">14학번</option>
+								<option value="13">13학번</option>
+								<option value="12">12학번</option>
+								<option value="11">11학번</option>
+								<option value="10">10학번</option>
+								<option value="09">09학번</option>
+								<option value="08">08학번</option>
+							</select>
+					    </label>    
+					    </div>    
+					      
+				    </div>
+				    <div class="submit">
+				    	<input type="submit" value="가입하기">
+				    </div>
+				</div>
+			</div>	
+		</div>
+	</form>	
+
+
+	<!-- Footer -->
+	<?
+     include('footer.html'); 
+     ?>

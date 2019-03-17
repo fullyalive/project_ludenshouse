@@ -1,0 +1,7 @@
+#undermapbar { 
+	z-index:10; width:100%; background-color:white; height:30px; top:0; margin-top:6px;}
+#undermapbar .wrap { text-align:center; width:960px; margin:0 auto; }	
+#undermapbar a{ text-decoration:initial; color:#66c1ad;  }
+
+.menu_category {float:left; width:220px; height:24px; margin:0 10px; padding-top:6px; font-weight: bold;}
+.menu_category:hover {color: #985d6a; background-color: #efefef;} 

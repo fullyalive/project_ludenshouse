@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>루덴스:대학생 제휴할인 서비스</title>
+    
+
+ 
+<style>
+        html, body { 
+            margin: 0; padding:0; height:100%; }
+        .floater { position: relative; width:1px; float: left;   height: 50%;   margin-bottom: -115px; }
+
+        .loginbox{position: relative; padding :1%; clear:left; width:235px;  display:block; margin: 0 auto; border: 1px solid #e8e8e8;}
+
+        .loginbox .inputWrap input{ width: 90%; padding: 5%; border: none; border-radius: 3px; margin-bottom:5px; }
+        .loginbox .check {font-size: 12px; color:#66c1ad;padding: 10px 0 20px;
+        }
+        .loginbox .submit input{ width: 100%; padding: 5%; background-color: #66c1ad; border: none; color:white; font-size: 16px;
+        }       
+        .register { text-align:center; background-color: #e8e8e8;   margin-top:2%; font-size:12px; padding:5%;}  
+        .register:hover, .register:active  { background-color: #66c1ad; color:#fff; }
+        .register a {  text-decoration:none; color: #000;  }
+
+</style>
+</head>
+
+
+
+<body>
+<div class="floater"></div> 
+<form method="post" action="login.php">
+<div class="loginbox">
+	<div class="inputWrap">
+    	<input type="text" name='id' placeholder="루덴스계정(이메일)"/>
+        <input type="password" name='pw' placeholder="비밀번호"/>
+    </div>
+    <div class="check">
+    	<input type="checkbox"/>
+        로그인 상태 유지
+    </div>
+    <div class="submit">
+    	<input type="submit" value="로그인"/>
+    </div>
+    <div class="register">
+       <a href="http://www.ludenshouse.com/register.html"> 10초만에 회원가입하기</a>
+    </div>
+</div>
+</form>
+</body>
+</html>
+        

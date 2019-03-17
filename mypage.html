@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>루덴스:대학생 제휴할인 서비스</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+     <!-- Xe icon --> 
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+    <!-- CSS -->
+    <link href="/css/basic.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link href="/css/mycard.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="/js/jquery-3.1.1.js"></script>
+    <style>
+        .wrap .mycard {border:none;}
+        .wrap .mycard img {width:100%;}
+        .wrap .term {text-align:center; color:#66c1ad; font-size: 1em; padding:1%;}
+        .wrap .swiper-container { width:100%; margin:0; height:auto; border:none;}
+        .term h1 { font-size: 1em; color:#66c1ad; }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+     <?
+     include('header.html'); 
+
+	$host = 'localhost';
+	$db_id = 'user_name';
+	$db_pw = 'user_password';
+	$db_name = 'db_name';
+	
+	if(isset($user_pk))
+	
+
+
+	$conn = mysql_connect($host,$db_id,$db_pw) or die("db connect fail");
+	mysql_select_db($db_name, $conn) or die('db select fail');
+	
+     $sql = "select * from member where mb_no = '$user_pk'";
+
+     $res = mysql_query($sql);
+
+     while($row = mysql_fetch_array($res))
+     {
+     	$code = $row['mb_code'];
+     	$valid = $row['mb_valid'];
+     }
+     ?>
+    <!-- Membership Card -->
+    <div class="wrap">
+        <div class="mycard">
+              <img src="/images/home/mycard.jpg" />
+        </div>
+        <div class="term">
+
+            <? if($valid == 1)
+            {
+            ?>
+				
+            <h1>Code : <? echo $code; ?></h1>
+            <? } else 
+            {
+            ?>
+			<h1>아직 인증되지 않았어요 :( </br>가입한 이메일에서 루덴스 회원 </br> 인증 링크를 눌러주세요!</h1>
+			
+            <? 
+            } 
+            ?>
+
+        </div>
+    </div>
+   
+   
+
+
+<!-- Swiper -->
+    <div class="wrap">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a target="blank" href="http://www.ludenshouse.com/ha_parkstudiosc.html"><img src="/images/home/park.jpg"/></a></div>
+                <div class="swiper-slide"><a target="blank" href="http://selecto.kr"><img src="/images/home/selecto.jpg"/></a></div>
+                             
+            </div>
+            <!-- Add Pagination -->
+           <div class="swiper-pagination swiper-pagination-white"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true,
+        effect: 'fade',
+        autoplay : 2000
+    });
+    </script>
+
+    
+    <!-- Footer -->
+        <?
+     include('footer.html'); 
+     ?>
+</body>
+</html>

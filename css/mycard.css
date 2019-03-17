@@ -1,0 +1,12 @@
+.mycard { width:98%; padding: 1% 1% 0 1%;}
+
+.card_top {width: 100%;}
+.card_top img {width:100%; display: block;}
+
+.card_bottom {width:100%; overflow:hidden; }
+.card_bottom .card_content {width: 80%; float: left;}
+.card_bottom .card_content.idnumber { width: 98%; margin:1%; height: 70px; line-height:70px; background: white; }
+.card_bottom .card_content .date {width: 98%; margin:1%; height: 70px; line-height:70px; background: white;}
+
+.card_bottom .card_qrcode {width:20%; float:left;}
+.card_bottom .card_qrcode img {width:100%; display: block;}

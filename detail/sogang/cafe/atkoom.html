@@ -1,0 +1,137 @@
+	<?
+     include('header.html'); 
+     ?>
+
+	<div id="wrapper">
+		<section class="stores">
+			<article>
+				<figure>
+					<img src="/images/detail/sogang/cafe/atkoom/0.jpg" alt="인문카페 엣꿈" />
+					<figcaption><a href = "tel:070-4222-0911"><i class="xi-call"></i> 070-4222-0911</a></figcaption>
+				</figure>
+				<hgroup>
+					<h2>인문카페 엣꿈</h2>
+					<h3>컵샐러드, 스낵류 제외</br>모든 메뉴 15% 할인</h3>
+				</hgroup>
+				<p><a href="http://map.naver.com/?searchCoord=592a9ef650a06cc55782a0b373b030281215f704fa65a1e33ccd62d119986c6f&query=7ISc7Jq47Yq567OE7IucIOuniO2PrOq1rCDqtJHshLHroZw06ri4IDExLTEw&menu=location&tab=1&lng=449fe7be37793e5c251435754c698ba0&mapMode=0&mpx=09440108%3A37.5545194%2C126.937941%3AZ12%3A0.0115686%2C0.0042444&lat=6dad6eccb1485ffed1976bebc7fcfc9c&dlevel=12&enc=b64"><i class="xi-map-marker"></i> 서울특별시 마포구 광성로4길 11-10</p>
+			<p>강연과 식사가 있는 인문카페 엣꿈!</br>
+				잠시 쉬어가기 좋은 카페랍니다</p>
+		
+			</article>
+
+			<div class="swiper-container">
+        	<div class="swiper-wrapper">
+        	 <!-- Add Pagination -->
+       		 <div class="swiper-pagination swiper-pagination-white"></div>
+       		 <!-- Add Arrows -->
+        	 <div class="swiper-button-next swiper-button-white"></div>
+       		 <div class="swiper-button-prev swiper-button-white"></div>
+
+            <div class="swiper-slide" style="background-image:url(/images/detail/sogang/cafe/atkoom/o1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(/images/detail/sogang/cafe/atkoom/i1.jpg)"></div>
+            </div>
+        	</div>
+	        <!-- Swiper JS -->
+			    <script src="/js/swiper.min.js"></script>
+			    <!-- Initialize Swiper -->
+			    <script>
+			    var swiper = new Swiper('.swiper-container', {
+			        pagination: '.swiper-pagination',
+			        paginationClickable: true,
+			        nextButton: '.swiper-button-next',
+			        prevButton: '.swiper-button-prev',
+			        spaceBetween: 30,
+			        effect: 'fade',
+			        autoplay : 3000
+			    });
+			    </script>     
+		</section>
+		<aside>
+			<div id="map"> <!-- 다음지도 -->
+				<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=7aa0dedfef42f22b766f0441e9ed65a4"></script>
+				<script type="text/javascript" src="/js/detail/detail/sogang/cafe/atkoom.js"></script>
+			</div>	
+			<section class="popular-stores"> <!-- 근처의 인기가게-->
+			<h2>근처의 인기 업체</h2>
+			<a href="http://www.ludenshouse.com/detail/sogang/cafe/alles.html">카페 알레스 S</a>	
+			<a href="http://www.ludenshouse.com/detail/sogang/cafe/triptea.html">카페 트립티</a>
+			<a href="http://www.ludenshouse.com/detail/sogang/cafe/take5.html">Take5 & edin</a>	
+			<a href="http://www.ludenshouse.com/detail/sogang/cafe/treeshadow.html">우리동네 나무그늘</a>
+			</section>	
+		</aside>
+	</div><!-- .wrapper -->
+	
+	<!-- Mobile -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+    	var logo_wrap_height = $('.article_left img').height();
+    	var img_height = $('.article_right').height();
+        var mTop = (logo_wrap_height - img_height ) /2;
+        $('.article_right').css('margin-top',mTop); })
+    </script>
+
+	<div id="mobile_wrap">
+		<div class="mobile_article_wrap">
+			<div class="article_left">
+				<img src="/images/detail/sogang/cafe/atkoom/0.jpg" alt="인문카페 엣꿈" />
+			</div>
+			<div class="article_right">
+				<div class="content_title">인문카페 엣꿈</div>
+				<div class="content_benefit">
+					<div class="content_left"><i class="xi-gift-o"></i> 제휴혜택</div>
+					<div class="content_right" style="font-weight:bold">컵샐러드, 스낵류 제외</br>모든 메뉴 15% 할인</div>
+				</div>
+				<div class="content_tel">
+					<div class="content_left"><i class="xi-call"></i> 전화번호</div>
+					<div class="content_right"><a href = "tel:070-4222-0911">070-4222-0911</a></div>
+				</div>	
+				<div class="content_location">
+					<div class="content_left"><i class="xi-map-marker"></i> 주소</div>
+					<div class="content_right"><a href="http://map.naver.com/?searchCoord=592a9ef650a06cc55782a0b373b030281215f704fa65a1e33ccd62d119986c6f&query=7ISc7Jq47Yq567OE7IucIOuniO2PrOq1rCDqtJHshLHroZw06ri4IDExLTEw&menu=location&tab=1&lng=449fe7be37793e5c251435754c698ba0&mapMode=0&mpx=09440108%3A37.5545194%2C126.937941%3AZ12%3A0.0115686%2C0.0042444&lat=6dad6eccb1485ffed1976bebc7fcfc9c&dlevel=12&enc=b64">서울특별시 마포구 광성로4길 11-10</a></div>
+				</div>
+			</div>	
+		</div>
+		<div class="pluskakao">
+			<a href="http://plus.kakao.com/home/m8qoy4om"><img src="/images/home/pluskakao.jpg" alt="루덴스하우스 친구추가"/></a>
+		</div>
+	
+		<div class="detail_swiper">
+			<div class="swiper-container">
+	            <div class="swiper-wrapper">
+	                <div class="swiper-slide"><img src="/images/detail/sogang/cafe/atkoom/o1.jpg"/></div>
+	                <div class="swiper-slide"><img src="/images/detail/sogang/cafe/atkoom/i1.jpg"></div>
+	            </div>
+	            <!-- Add Pagination -->
+	            <div class="swiper-pagination swiper-pagination-white"></div>
+	            <!-- Add Navigation -->
+	            <div class="swiper-button-prev swiper-button-white"></div>
+	            <div class="swiper-button-next swiper-button-white"></div>
+	       	</div>	
+		</div>	
+		
+		<!-- Initialize Swiper -->
+	    <script>
+	    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev',
+	        slidesPerView: 1,
+	        paginationClickable: true,
+	        spaceBetween: 30,
+	        loop: true,
+	        effect: 'fade',
+			autoplay : 3000
+	    });
+	    </script>
+		<div class="recommend_title">근처의 인기 업체</div>
+		<div class="recommend"><a href="http://www.ludenshouse.com/detail/sogang/cafe/alles.html">카페 알레스 S</a></div>
+		<div class="recommend"><a href="http://www.ludenshouse.com/detail/sogang/cafe/triptea.html">카페 트립티</a></div>
+		<div class="recommend"><a href="http://www.ludenshouse.com/detail/sogang/cafe/take5.html">Take5 & edin</a></div>
+		<div class="recommend"><a href="http://www.ludenshouse.com/detail/sogang/cafe/treeshadow.html">우리동네 나무그늘</a></div>
+	</div>
+
+    <!-- Footer -->
+	<?
+     include('footer.html'); 
+     ?> 
+	
